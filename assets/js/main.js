@@ -1,42 +1,61 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   "use strict";
+
+  /**
+   * glightbox
+   */
   const glightbox = GLightbox({
-    selector: ".glightbox",
+    selector: '.glightbox'
   });
 
-  new swiper(".clients-slider", {
-    speed: 500,
+ 
+
+  /**
+   * Slider
+   */
+  new Swiper('.clients-slider', {
+    speed: 400,
     loop: true,
-    autoplay: { delay: 5000, disableOnInteraction: false },
-    slidePreview: "auto",
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 'auto',
     breakpoints: {
       320: {
-        slidePreview: 2,
-        SpaceBetween: 40,
+        slidesPerView: 2,
+        spaceBetween: 40
       },
       480: {
-        slidePreview: 3,
-        SpaceBetween: 60,
+        slidesPerView: 3,
+        spaceBetween: 60
       },
       640: {
-        slidePreview: 4,
-        SpaceBetween: 80,
+        slidesPerView: 4,
+        spaceBetween: 80
       },
       992: {
-        slidePreview: 6,
-        SpaceBetween: 120,
-      },
-    },
+        slidesPerView: 6,
+        spaceBetween: 120
+      }
+    }
   });
+
+  
+  /**
+   * Animation on scroll function and init
+   */
   function aos_init() {
     AOS.init({
-      duration: 1100,
-      easing: "ease-in-out",
+      duration: 1000,
+      easing: 'ease-in-out',
       once: true,
-      mirror: false,
+      mirror: false
     });
   }
-  window.addEventListener("load", () => {
+  
+  window.addEventListener('load', () => {
     aos_init();
   });
+
 });
