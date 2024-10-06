@@ -1,6 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <meta title="Al Harbi-home" />
+
+    <link href="assets/Images/slide1.png" rel="icon" />
+    <link href="assets/Images/slide1.png" rel="slide1-icon" />
+
+    <!--Main CSS File-->
     <link href="assets/style.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
@@ -8,7 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
-      rel="stylesheet"/>
+      rel="stylesheet"
+    />
 
     <!-- Vendor CSS Files -->
     <link
@@ -19,7 +30,6 @@
       href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
       rel="stylesheet"
     />
-
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <link
       href="assets/vendor/glightbox/css/glightbox.min.css"
@@ -30,18 +40,29 @@
     <!--Main CSS file-->
     <link href="assets/vendor/main/main.css" rel="stylesheet" />
 
-    <!-- Variables CSS Files -->
-    <link href="assets/css/variables.css" rel="stylesheet" />
+    <!--CSS variables files-->
+    <!-- <link href="assets/scss/variables-blue.css" rel="stylesheet"/>
+    <link href="assets/scss/variables-green.css" rel="stylesheet"/>
+    <link href="assets/scss/variables-orange.css" rel="stylesheet"/> -->
+    <link href="assets/scss/variables-pink.css" rel="stylesheet" />
+    <!-- <link href="assets/scss/variables-purple.css" rel="stylesheet"/>
+    <link href="assets/scss/variables-red.css" rel="stylesheet"/>
+    <link href="assets/scss/variables.css" rel="stylesheet"/> -->
   </head>
 
   <body>
-    <section class="hero carousel carousel-fade">
+    <section
+      id="hero"
+      class="hero carousel carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-interval="5000"
+    >
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
             <div class="row justify-content-center gy6">
               <div class="col-lg-5 col-md-8">
-                <img src="" class="img-fluid" alt="" />
+                <img src="" class="img-fluid img" alt="" />
               </div>
 
               <div class="col-lg-9 text-center">
@@ -52,17 +73,19 @@
                   quisquam velit aut autem ducimus consequuntur sed sunt ad
                   nostrum repudiandae, impedit quas accusantium.
                 </p>
-                <button>Click here</button>
+                <a href="">
+                  <button class="btn-get-started">Click here</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <div class="container">
             <div class="row justify-content-center gy6">
               <div class="col-lg-5 col-md-8">
-                <img src="" class="img-fluid" alt="" />
+                <img src="" class="img-fluid img" alt="" />
               </div>
 
               <div class="col-lg-9 text-center">
@@ -73,17 +96,19 @@
                   iure, magnam blanditiis laborum vitae corrupti at tenetur
                   exercitationem consequatur autem tempore ipsa natus.
                 </p>
-                <button>Click here</button>
+                <a href="">
+                  <button class="btn-get-started">Click here</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <div class="container">
             <div class="row justify-content-center gy6">
               <div class="col-lg-5 col-md-8">
-                <img src="" class="img-fluid" alt="" />
+                <img src="assets/Images/slide1.png" class="img-fluid" alt="" />
               </div>
 
               <div class="col-lg-9 text-center">
@@ -94,13 +119,15 @@
                   rerum? Consequatur ut ad tempore maiores. Ea laboriosam
                   officiis sed harum aut adipisci.
                 </p>
-                <button>Click here</button>
+                <a href="">
+                  <button class="btn-get-started">Click here</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="carousel-item active">
+        <div class="carousel-item">
           <div class="container">
             <div class="row justify-content-center gy6">
               <div class="col-lg-5 col-md-8">
@@ -115,12 +142,40 @@
                   enim. Et illo est aliquid culpa doloremque voluptatibus.
                   Repudiandae impedit nemo nihil quidem eos?
                 </p>
-                <button>Click here</button>
+                <a href="">
+                  <button class="btn-get-started">Click here</button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <a
+        class="carousel-control-prev"
+        role="button"
+        data-bs-slide="prev"
+        href=""
+      >
+        <span
+          class="carousel-control-prev-icon bi bi-chevron-left"
+          area-hidden="true"
+        ></span>
+      </a>
+
+      <a
+        class="carousel-control-next"
+        role="button"
+        data-bs-slide="next"
+        href=""
+      >
+        <span
+          class="carousel-control-next-icon bi bi-chevron-right"
+          area-hidden="true"
+        ></span>
+      </a>
+
+      <ol class="carousel-indicators"></ol>
     </section>
 
     <section>
@@ -145,19 +200,62 @@
       <div class="container" data-aos="zoom-out">
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/slide1.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/Images/vector-documents-icon.jpg" class="img-fluid" alt=""></div>
-            
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="assets/Images/slide1.png"
+                class="img-fluid img"
+                alt=""
+              />
+            </div>
           </div>
+          
         </div>
-      </div>
+        <div class="swiper-pagination"></div>
+       </div>
     </section>
+
     <!-- Vendor JS Files-->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
@@ -167,4 +265,30 @@
     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
     <script src="assets/js/main.js"></script>
   </body>
+
+  <!-- <footer id="footer" class="footer">
+    <div class="footer-legal space text-center">
+      <div class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
+        <div class="d-flex flex-column align-items-center align-items-lg-start">
+          <div class="copyright">
+            &copy; copyright <strong> <span> Al Harbi Group</span></strong> All
+            Rights Reserved
+          </div>
+          <div class="credits">Powered by <a href="QI"></a></div>
+        </div>
+        <div class="social-links" class="order-first" class="order-lg-last">
+          <a class="instagram">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a class="linkedin" href="">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a class="facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer> -->
+  <div id="preloader"></div>
 </html>

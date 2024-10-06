@@ -1,5 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
+  const preloader=document.querySelector ('#preloader');
+  if (preloader) {
+    window.addEventListener ('load', ()=>{
+preloader.remove();
+    });
+  }
 
   /**
    * glightbox
@@ -21,6 +27,11 @@ document.addEventListener('DOMContentLoaded', () => {
       disableOnInteraction: false
     },
     slidesPerView: 'auto',
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
     breakpoints: {
       320: {
         slidesPerView: 2,
@@ -39,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 120
       }
     }
-  });
+    });
 
   
   /**
@@ -57,5 +68,12 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     aos_init();
   });
+
+  /**
+   * Carousel 
+   */
+  function Carousel(){
+    
+  }
 
 });
