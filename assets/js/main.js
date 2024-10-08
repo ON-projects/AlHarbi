@@ -70,10 +70,9 @@ preloader.remove();
   });
 
   /**
-   * Carousel 
+   * Counter 
    */
-  function Carousel(){
-    
-  }
+  
+  new PureCounter();
 
 });

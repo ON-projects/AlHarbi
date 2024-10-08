@@ -36,6 +36,42 @@ color: red;
 text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black;
 }
 
-.swiper {
-  
+.clients{
+padding-bottom: 50px;
+}
+
+.clients .swiper-pagination {
+margin-top: 40px;
+position: relative;
+}
+
+.clients .swiper-pagination .swiper-pagination-bullet {
+width: 15px;
+height: 5px;
+background-color: grey;
+opacity: 1;
+}
+
+.counts {
+    background-color: aqua;
+    padding: 30px;
+}
+
+.counter {
+    background-color: grey;
+    padding: 30px;
+}
+
+.counts .counter span {
+font-weight: bold;
+font-size: 50px;
+}
+
+.counts .counter p {
+    font-size: 25px;
+}
+
+.cta {
+    background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Images/slide1.png") fixed center center;
+    background-size: cover;
 }
