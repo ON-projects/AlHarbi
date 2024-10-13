@@ -75,3 +75,32 @@ font-size: 50px;
     background: linear-gradient(rgba(3, 3, 3, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/Images/slide1.png") fixed center center;
     background-size: cover;
 }
+
+
+#featured-services .service-item .icon-box{
+    border-width: 1px;
+    border-style: ridge;
+    border-radius: 5;
+    border-color: darkgray;
+    background-color: white;
+    padding: 15px;
+    margin: 5px; 
+    margin-bottom: 10px;
+}   
+
+
+#featured-services .service-item .icon-box:hover{
+    transition: ease-in-out 0.5s;
+    background-color: lightgrey;
+    cursor: pointer;
+    transform: translateY(-10px);
+}
+
+.icon-box i {
+    float: left;
+    padding-right: 10px;
+}
+
+.icon-box h4 {
+    font-size: 20px;
+}
