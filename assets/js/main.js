@@ -42,17 +42,39 @@ preloader.remove();
         spaceBetween: 60
       },
       640: {
-        slidesPerView: 4,
+        slidesPerView: 5,
         spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
       }
     }
     });
 
+
+/**
+   * Testimnoials
+   */
+    new Swiper('.testimonials-slider', {
+      speed: 600,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      slidesPerView: 'auto',
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        clickable: true
+      }
+      });
+
   
+      new Swiper('.reports-slider', {
+        speed: 400,
+        loop: true,
+        autoplay:false,
+        slidesPerView: 'auto'
+        });
+    
   /**
    * Animation on scroll function and init
    */
