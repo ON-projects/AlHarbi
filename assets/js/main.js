@@ -48,6 +48,26 @@ preloader.remove();
     }
     });
 
+    var swiper = new Swiper(".reports-slider", {
+      spaceBetween: 0,
+      speed: 500,
+      centeredSlides: true,
+      loop: true,
+      slideToClickedSlide: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".custom-swiper-button-next",
+        prevEl: ".custom-swiper-button-prev",
+      },
+    });
+
 
 /**
    * Testimnoials
@@ -67,34 +87,13 @@ preloader.remove();
       }
       });
 
-  
-      new Swiper('.reports-slider', {
-        speed: 400,
-        loop: true,
-        autoplay:true,
-        slidesPerView: 'auto',
-        navigation:{
-          nextE1:'.swiper-slide-next',
-          prevE1:'.swiper-slide-prev'
-        },
-        breakpoints: {
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 40
-          },
-          480: {
-            slidesPerView: 3,
-            spaceBetween: 60
-          },
-          640: {
-            slidesPerView: 5,
-            spaceBetween: 80
-          }
-        }
-        });
+
+
     
   /**
    * Animation on scroll function and init
+   * 
+   * 
    */
   function aos_init() {
     AOS.init({
