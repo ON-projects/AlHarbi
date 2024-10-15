@@ -71,8 +71,26 @@ preloader.remove();
       new Swiper('.reports-slider', {
         speed: 400,
         loop: true,
-        autoplay:false,
-        slidesPerView: 'auto'
+        autoplay:true,
+        slidesPerView: 'auto',
+        navigation:{
+          nextE1:'.swiper-slide-next',
+          prevE1:'.swiper-slide-prev'
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 40
+          },
+          480: {
+            slidesPerView: 3,
+            spaceBetween: 60
+          },
+          640: {
+            slidesPerView: 5,
+            spaceBetween: 80
+          }
+        }
         });
     
   /**
