@@ -104,3 +104,38 @@ font-size: 50px;
 .icon-box h4 {
     font-size: 20px;
 }
+
+.gallery {
+    overflow: hidden;
+}
+
+.gallery .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    opacity: 1;
+}
+
+.gallery .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: red;
+    color: var(--color-primary)
+}
+
+@media (min-width: 992px) {
+    .gallery .swiper-wrapper {
+        padding: 40px 0;
+    }
+
+    .gallery .swiper-slide-active {
+        border: 8px solid var(--color-primary);
+        padding: 5px;
+        background-color: white;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+}

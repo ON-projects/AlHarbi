@@ -54,10 +54,7 @@ preloader.remove();
       centeredSlides: true,
       loop: true,
       slideToClickedSlide: true,
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
+      autoplay: false,
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
@@ -67,6 +64,40 @@ preloader.remove();
         prevEl: ".custom-swiper-button-prev",
       },
     });
+
+    var swiper = new Swiper(".report2023-slider", {
+      spaceBetween: 0,
+      speed: 500,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 40
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 60
+        },
+        640: {
+          slidesPerView: 5,
+          spaceBetween: 80
+        }
+    },
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".custom-swiper-button-next",
+        prevEl: ".custom-swiper-button-prev",
+      }  
+});
 
 
 /**
