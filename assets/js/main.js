@@ -65,10 +65,10 @@ preloader.remove();
       },
     });
 
-    var swiper = new Swiper(".report2023-slider", {
+    var swiper = new Swiper(".report2022-slider", {
+      centeredSlides: true,
       spaceBetween: 0,
       speed: 500,
-      centeredSlides: true,
       loop: true,
       autoplay: {
         delay: 5000,
@@ -77,15 +77,15 @@ preloader.remove();
       breakpoints: {
         320: {
           slidesPerView: 2,
-          spaceBetween: 40
+          spaceBetween: 10
         },
         480: {
           slidesPerView: 3,
-          spaceBetween: 60
+          spaceBetween: 10
         },
         640: {
           slidesPerView: 5,
-          spaceBetween: 80
+          spaceBetween: 10
         }
     },
       slidesPerView: 'auto',
@@ -98,6 +98,76 @@ preloader.remove();
         prevEl: ".custom-swiper-button-prev",
       }  
 });
+
+    var swiper = new Swiper(".report2023-slider", {
+      centeredSlides: true,
+      spaceBetween: 0,
+      speed: 500,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false
+      },
+      breakpoints: {
+        320: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        480: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 5,
+          spaceBetween: 20
+        }
+    },
+      slidesPerView: 'auto',
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        type: 'bullets',
+      },
+      navigation: {
+        nextEl: ".custom-swiper-button-next",
+        prevEl: ".custom-swiper-button-prev",
+      }  
+});
+
+var swiper = new Swiper(".report2024-slider", {
+  centeredSlides: true,
+  spaceBetween: 0,
+  speed: 500,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    480: {
+      slidesPerView: 3,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 20
+    }
+},
+  slidesPerView: 'auto',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".custom-swiper-button-next",
+    prevEl: ".custom-swiper-button-prev",
+  }  
+});
+
 
 
 /**
