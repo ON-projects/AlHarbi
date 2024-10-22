@@ -1,16 +1,20 @@
 p {
     font-size: 50;
-    color: black;
+    color: var(--color-primary);
     text-decoration: none;
     font-style: oblique;
     text-shadow: 3px;
 }
 
-#newsbar {
+.hero h3{
+    margin-bottom: 15px;
+}
+
+/* #newsbar {
     height: 30px;
     font-size: 20px;
     font-weight: bold;
-    width: 100%;
+    width: 50%;
     background-color: white;
     margin: 5px;
     padding-left: 20px;
@@ -31,10 +35,11 @@ text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
 }
 
 #newsbar a:hover {
+
 transition: 0.5s;
 color: red;
 text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black;
-}
+} */
 
 .clients{
 padding-bottom: 50px;
@@ -135,11 +140,15 @@ font-size: 50px;
     .gallery .swiper-slide-active {
         border: 8px solid var(--color-primary);
         padding: 5px;
-        height: 120%;
         background-color: white;
-        transform: scale(1.2);
+        scale: 1.3;
         z-index: 1;
+        box-shadow: 0px 0px 30px rgba(55, 55, 63, 0.08);
     }
+}
+
+@media (min-width: 1024px) {
+    width: 100%;
 }
 
 .reports .year {
@@ -190,4 +199,78 @@ transform: scale(1.09);
 .gallery .custom-swiper-button-prev {
     display: flex;
     justify-content: start;
+}
+
+.section1 {
+    white-space: nowrap;
+    border: 2px solid var(--color-secondary);
+    overflow: hidden;
+    height: 45px;
+    width: 100%;
+    position: relative;
+    background-color: white;
+    margin-top: 20px;
+}
+
+.news {
+    display: inline-block;
+    margin-top: 0;
+    animation: marquee 20s linear infinite
+}
+
+.collection1 {
+    position:relative;
+    left: 0%;
+    animation: swap 20s linear infinite;
+}
+
+.item {
+    display: inline-block;
+    padding: 0 1rem;
+    padding-top: 5px;
+    font-size: 22px;
+    color: var(--color-primary);
+    font-weight:normal;
+}
+
+@keyframes marquee {
+0% {transform: translateX(0);
+}
+100% {transform: translateX(-100%);
+}
+}
+
+@keyframes swap {
+    0%, 50% {left: 0%;
+    }
+    50.01%, 100% {left: 100%;
+    }
+    }
+
+.croll {
+    position: fixed;
+    visibility:visible;
+    right: 10px;
+    bottom: 15px;
+    height: 30px;
+    width:30px;
+    border-radius: 4px;
+    transition:all 0.5s;
+    z-index: 995;
+}    
+
+.croll i{
+    font-size: 40px;
+    color: red;
+    line-height: 0;
+}
+
+.croll:hover {
+    background-color: var(--color-secondary);
+    opacity: 0.8;
+}
+
+.croll.active {
+    visibility: visible;
+    opacity: 1;
 }

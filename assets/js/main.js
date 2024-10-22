@@ -14,7 +14,25 @@ preloader.remove();
     selector: '.glightbox'
   });
 
+  /**
+   * Carousel 
+   */
+
+    let heroCarouselIndicators = document.querySelector('#hero .carousel-indicators');
+   if (heroCarouselIndicators) {
+     let heroCarouselItems = document.querySelectorAll('#hero .carousel-item')
  
+     heroCarouselItems .forEach((item, index) => {
+       if (index === 0)
+       {
+         heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}" class="active"></li>`;
+       } else 
+       {
+         heroCarouselIndicators.innerHTML += `<li data-bs-target="#hero" data-bs-slide-to="${index}"></li>`;
+       }
+     });
+   }
+
 
   /**
    * Slider
@@ -189,8 +207,11 @@ var swiper = new Swiper(".report2024-slider", {
       });
 
 
+/**
+ * Newsbar
+ */
 
-    
+
   /**
    * Animation on scroll function and init
    * 
@@ -216,3 +237,21 @@ var swiper = new Swiper(".report2024-slider", {
   new PureCounter();
 
 });
+
+/**
+ * Scroll to Top
+ */
+
+const scroll = document.querySelector ('.croll');
+if (scroll) {
+  const toggleScrollTop = function()
+{
+  window.scrollY > 100 ? scroll.classList.Add ('active') : scroll.classList.remove('active');
+}
+  window.addEventListener ('load',toggleScrollTop);
+  document.addEventListener ('scroll', toggleScrollTop);
+  scroll.addEventListener ('click', window.scrollTo ({
+    top:0,
+    behavior:'smooth'
+    }));
+}
