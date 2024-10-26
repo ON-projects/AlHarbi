@@ -1054,6 +1054,9 @@ section {
   transition: all ease-in-out 0.4s;
   background: var(--color-white);
   height: 100%;
+  text-align: center;
+  
+ 
 }
 
 .featured-services .service-item .icon {
@@ -1085,7 +1088,7 @@ section {
 
 .featured-services .service-item:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 0 60px 0 rgba(var(--color-secondary-rgb), 0.1);
+  box-shadow: 0px 0 60px 0 rgba(var(--color-primary-rgb), 0.3);
 }
 
 .featured-services .service-item:hover h4 a {
@@ -1201,12 +1204,11 @@ section {
 --------------------------------------------------------------*/
 .cta {
   padding: 0;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .cta .container {
   padding: 80px;
-  background: rgba(var(--color-secondary-rgb), 0.1);
   border-radius: 15px;
 }
 
@@ -1476,12 +1478,12 @@ section {
   line-height: 0;
 }
 
-.features .nav-link h4 {
+/* .features .nav-link h4 {
   font-size: 20px;
   font-weight: 600;
   margin: 10px 0 0 0;
   color: var(--color-secondary);
-}
+} */
 
 .features .nav-link:hover {
   color: var(--color-primary);
@@ -1494,7 +1496,7 @@ section {
 }
 
 .features .nav-link.active h4 {
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .features .nav-link.active i {
@@ -1647,7 +1649,7 @@ section {
 
 .testimonials .testimonial-item {
   text-align: center;
-  color: var(--color-white);
+  color: var(--color-primary);
 }
 
 .testimonials .testimonial-item .testimonial-img {
@@ -3003,7 +3005,7 @@ section {
 .footer {
   color: var(--color-white);
   font-size: 14px;
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
 }
 
 .footer .footer-content {
