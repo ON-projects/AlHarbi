@@ -72,9 +72,10 @@ opacity: 1;
     color: var(--color-primary);
 }
 
-.features .clients-slider .swiper-wrapper .swiper-slide .nav-link h6 .active {
+.features .clients-slider .swiper-wrapper .swiper-slide .nav-link h6.active {
     padding-top: 15px;
     text-align: center;
+    color: var(--color-white);
 }
 
 .counts {
@@ -106,6 +107,28 @@ opacity: 1;
 .cta {
     background: linear-gradient(rgba(55, 57, 105, 0.7), rgba(207, 207, 207, 0.5)), url("../assets/Images/Alharbicta2.png") fixed center center;
     background-size: cover;
+}
+
+.cta h2{
+    font-style: italic;
+}
+
+.cta h4{
+font-weight: bold;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.cta .btn{
+background-color: var(--color-white);
+font-size: 16px;
+border: 1px solid var(--color-primary);
+font-weight: bold;
+}
+
+.cta .btn:hover{
+background-color: var(--color-primary);
+color: var(--color-white);
 }
 
 .features .tab-content .tab-pane .featured-services .service-item .guidelines {
@@ -191,7 +214,9 @@ opacity: 1;
 }
 
 @media (min-width: 1024px) {
+    .body {
     width: 100%;
+    }
 }
 
 .reports .year {
@@ -201,6 +226,9 @@ opacity: 1;
     background-color: white;
     box-shadow: 0px 0 30px rgba(55, 55, 63, 0.08);
     transition: 0.3s;
+    width:100%;
+    margin-left: 5px;
+    margin-right: 5px;
     }
 
 .reports .year .yearReport {
@@ -214,7 +242,8 @@ opacity: 1;
     }
 
 .reports .year .yearReport h4{
-    font-size: 60px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .reports .year .yearReport :after {
@@ -232,7 +261,7 @@ opacity: 1;
     background: white;
 }
  
-.reports .nav-tabs .nav-link :after{
+.reports .nav-tabs .nav-link .active{
     background-color: red;
 }
 .reports .nav-tabs .nav-link h4{
@@ -280,7 +309,6 @@ opacity: 1;
 .item {
     display: inline-block;
     padding: 0 1rem;
-    padding-top: ;
     font-size: 18px;
     color: white;
     font-weight:lighter;
@@ -327,4 +355,59 @@ opacity: 1;
 .scroll-top.active {
     visibility: visible;
     opacity: 1;
+}
+
+.testimonials .testimonial-item .btn {
+    background-color: var(--color-primary);
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-top: 30px;
+
+}
+
+.testimonials .testimonial-item h2 {
+margin-top: 20px;
+}
+
+.testimonials .testimonial-item h5 {
+    font-style: italic;
+    margin-top: 15px;
+    color: rgb(207, 207, 207);
+}
+
+.credits {
+    text-align: left;
+}
+
+.credits .img {
+    width: 5%;
+    position:inherit ;
+    display: inline;
+}
+
+.employeecard {
+    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
+    border-radius: 5px;
+    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
+    display: grid;
+    list-style: none;
+}
+
+.imagecard {
+    width: 105%;
+    float: right;
+    display: inline;
+    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
+    border-radius: 5px;
+    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
+}
+
+.namecard {
+    padding: 10px;
+    text-align: left;
+    justify-content: left;
+    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
+    border-radius: 5px;
+    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
 }

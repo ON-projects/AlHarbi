@@ -208,7 +208,7 @@ var swiper = new Swiper(".report2024-slider", {
 /**
    * Testimnoials
    */
-    new Swiper('.testimonials-slider', {
+    new Swiper(".testimonials-slider", {
       speed: 600,
       loop: true,
       autoplay: {
@@ -219,7 +219,7 @@ var swiper = new Swiper(".report2024-slider", {
       pagination: {
         el: '.swiper-pagination',
         type: 'bullets',
-        clickable: true
+        clickable: true,
       }
       });
 
@@ -252,6 +252,8 @@ var swiper = new Swiper(".report2024-slider", {
    */
   
   new PureCounter();
+
+document.onload = document.getElementById("copyyear").innerHTML = newDate();
 
 });
 

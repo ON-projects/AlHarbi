@@ -51,6 +51,29 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class="container">
+          <div class="row gy-6 align-items-center d-flex flex-row">
+            <div class="col-lg-6">
+              <h2>Insert title here</h2>
+              <h3>Insert details here</h3>
+              <p>
+                Insert a text of 2 lines.Insert a text of 2 lines.Insert a text of 2 lines.
+                <br>
+                Insert a text of 2 lines.Insert a text of 2 lines.Insert a text of 2 lines.
+                <br>
+              </p>
+              <a href="">
+                <button class="btn-get-started m-3">Show more</button>
+              </a>
+            </div>
+            <div class="col-lg-6 col-md-6 align-items-center d-flex flex-column">
+              <img src="assets/Images/SliderImage2.png" class="img img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="container">
           <div class="row gy-6 align-items-center">
             <div class="col-lg-6">
               <h2>Insert title here</h2>
@@ -62,10 +85,10 @@
                 <br>
               </p>
               <a href="">
-                <button class="btn-get-started">Show more</button>
+                <button class="btn-get-started m-3">Show more</button>
               </a>
             </div>
-            <div class="col-lg-6 col-md-6 align-items-center">
+            <div class="col-lg-6 col-md-6 align-items-center d-flex flex-column">
               <img src="assets/Images/SliderImage2.png" class="img-fluid" alt="" />
             </div>
           </div>
@@ -85,10 +108,10 @@
                 <br>
               </p>
               <a href="">
-                <button class="btn-get-started">Show more</button>
+                <button class="btn-get-started m-3">Show more</button>
               </a>
             </div>
-            <div class="col-lg-6 col-md-6 align-items-center">
+            <div class="col-lg-6 col-md-6 align-items-center d-flex flex-column">
               <img src="assets/Images/SliderImage2.png" class="img-fluid" alt="" />
             </div>
           </div>
@@ -108,33 +131,10 @@
                 <br>
               </p>
               <a href="">
-                <button class="btn-get-started">Show more</button>
+                <button class="btn-get-started m3">Show more</button>
               </a>
             </div>
-            <div class="col-lg-6 col-md-6 align-items-center">
-              <img src="assets/Images/SliderImage2.png" class="img-fluid" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-        <div class="container">
-          <div class="row gy-6 align-items-center">
-            <div class="col-lg-6">
-              <h2>Insert title here</h2>
-              <h3>Insert details here</h3>
-              <p>
-                Insert a text of 2 lines.Insert a text of 2 lines.Insert a text of 2 lines.
-                <br>
-                Insert a text of 2 lines.Insert a text of 2 lines.Insert a text of 2 lines.
-                <br>
-              </p>
-              <a href="">
-                <button class="btn-get-started">Show more</button>
-              </a>
-            </div>
-            <div class="col-lg-6 col-md-6 align-items-center">
+            <div class="col-lg-6 col-md-6 align-items-center d-flex flex-column">
               <img src="assets/Images/SliderImage2.png" class="img-fluid" alt="" />
             </div>
           </div>
@@ -303,38 +303,54 @@
         </div>
 
         <div class="tab-pane" id="tab-2">
-          <section id="testimonails" class="testimonials">
+          <section id="testimonials" class="testimonials">
             <div class="container" data-aos="zoom-out">
               <div class="testimonials-slider swiper">
                 <div class="swiper-wrapper align-items-center">
                   <div class="swiper-slide">
                     <div class="testimonial-item">
-                      <i class="bi bi-phone-landscape">Call here</i>
-                      <H4>HR departments</H4>
+                      <h2>Department one</h2>
+                      <h5> Add details about the department here
+                        <br>
+                        Add details about the department here
+                        </h5>
+                      <button class="btn" type="button" data-bs-target="#one" data-bs-toggle="modal">Show employees</button>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial-item">
-                      <i class="bi bi-phone-landscape">Call here</i>
-                      <p>department</p>
+                      <h2>Department two</h2>
+                      <h5> Add details about the department here
+                        <br>
+                        Add details about the department here
+                        </h5>
+                      <button class="btn" type="button" data-bs-target="#two" data-bs-toggle="modal">Show employees</button>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial-item">
-                      <i class="bi bi-phone-landscape">Call here</i>
-                      <p>HR department</p>
+                      <h2>Department three</h2>
+                      <h5> Add details about the department here
+                        <br>
+                        Add details about the department here
+                        </h5>
+                        <button class="btn" type="button" data-bs-target="#three" data-bs-toggle="modal">Show employees</button>
                     </div>
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial-item">
-                      <i class="bi bi-phone-landscape">Call here</i>
-                      <p>department</p>
+                      <h2>Department four</h2>
+                      <h5> Add details about the department here
+                        <br>
+                      Add details about the department here
+                      </h5>
+                      <button class="btn" type="button" data-bs-target="#four" data-bs-toggle="modal">Show employees</button>
                     </div>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
           </section>
         </div>
 
@@ -489,7 +505,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5 align-items-lg-stretch order-1 order-lg-2 img">
+              <div class="col-lg-5 align-items-lg-stretch order-1 order-lg-2 align-content-center d-flex flex-column img">
                 <img src="assets/Images/eventImage.png" />
               </div>
             </div>
@@ -642,32 +658,32 @@
             <div class="container" data-aos="zoom-in">
               <div class="row gy-4">
                 <div class="nav nav-tabs">
-                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos-delay="100">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-11">
+                  <div class="col-lg-4 d-flex align-items-stretch" data-aos-delay="100">
                       <div class="year">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-11">
                         <div class="yearReport d-flex stretched-link">
                           <h4 class="info">2022</h4>
                         </div>
+                      </a>
                       </div>
-                    </a>
                   </div>
-                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos-delay="100">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-12">
+                  <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos-delay="100">
                       <div class="year">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-12">
                         <div class="yearReport d-flex stretched-link">
                           <h4 class="info">2023</h4>
                         </div>
+                      </a>
                       </div>
-                    </a>
                   </div>
-                  <div class="col-lg-3 col-md-4 d-flex align-items-stretch" data-aos-delay="100">
-                    <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-13">
+                  <div class="col-lg-4 col-md-4 d-flex align-items-stretch" data-aos-delay="100">
                       <div class="year">
+                        <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-13">
                         <div class="yearReport d-flex stretched-link">
                           <h4 class="info">2024</h4>
                         </div>
+                      </a>
                       </div>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -850,13 +866,14 @@
   <section id="cta" class="cta">
     <div class="container" data-aos="zoom-in">
       <div class="text-center">
-        <h2>Support</h2>
-        <p>Support</p>
-        <a><button>Click here</button></a>
+        <h2>'Al Harbi strives to be the leading contracting company in the Saudi market'</h2>
+        <h4>50 years of construction</h4>
+        <a href="https://www.alharbi.com.sa/newtest/en/about.html" target="blank">
+          <button class="btn">Al Harbi website</button>  
+        </a>
       </div>
     </div>
   </section>
-
 
   <footer id="footer" class="footer">
     <div class="footer-legal space text-center">
@@ -864,16 +881,20 @@
         class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center">
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div class="copyright">
+            <span id="copyyear"></span>
             &copy; copyright
             <strong> <span> Al Harbi Group</span></strong> All Rights Reserved
           </div>
-          <div class="credits">Powered by <a href="QI"></a></div>
+          <div class="credits">
+            Powered by
+            <img class="img" src="assets/Images/qilogo.png">
+          </div>
         </div>
         <div class="social-links" class="order-first" class="order-lg-last">
           <a class="instagram">
             <i class="bi bi-instagram"></i>
           </a>
-          <a class="linkedin" href="">
+          <a class="linkedin" href="https://www.linkedin.com/company/al-harbi-for-educational-and-infromational-projects-heip-/?originalSubdomain=sa" target="blank">
             <i class="bi bi-linkedin"></i>
           </a>
           <a class="facebook">
@@ -884,7 +905,316 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="one" 
 
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false" 
+  tab index="-1" 
+  area-hidden="true"
+  area-labelledby="staticBackdropLabel"
+  >
+
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" area-label="close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="two" 
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false" 
+  tab index="-1" 
+  area-hidden="true"
+  area-labelledby="staticBackdropLabel"
+  >
+
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" area-label="close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="three" 
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false" 
+  tab index="-1" 
+  area-hidden="true"
+  area-labelledby="staticBackdropLabel"
+  >
+
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" area-label="close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="modal fade" id="four" 
+  data-bs-backdrop="static" 
+  data-bs-keyboard="false" 
+  tab index="-1" 
+  area-hidden="true"
+  area-labelledby="staticBackdropLabel"
+  >
+
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="btn-close" type="button" data-bs-dismiss="modal" area-label="close"></button>
+      </div>
+      <div class="modal-body">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+
+      <div class="col-md-9">
+        <h5 class="namecard">
+        <strong>Name: </strong>Full name here
+        <br>
+        <strong>Job title: </strong>Job title here
+        <br>
+        <strong>Ext.: </strong>Ext. number here
+        </h5>
+      </div>
+      <div class="col-md-3">
+        <img class="imagecard" src="assets/Images/employee.png" alt="">
+      </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Back</button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+  
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
   </a>
