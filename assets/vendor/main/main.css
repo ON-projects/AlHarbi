@@ -1156,7 +1156,7 @@ section {
 }
 
 .about .nav-link.active {
-  color: var(--color-primary);
+  color: var(--color-white);
   background: none;
   border-bottom: 3px solid var(--color-primary);
 }
@@ -1168,9 +1168,9 @@ section {
 }
 
 .about .tab-content h4 {
-  font-size: 18px;
+  font-size: 25px;
   margin: 0;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--color-secondary);
 }
 
@@ -1496,7 +1496,7 @@ section {
 }
 
 .features .nav-link.active h4 {
-  color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .features .nav-link.active i {
