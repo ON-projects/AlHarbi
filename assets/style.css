@@ -379,10 +379,8 @@ margin-top: 20px;
     text-align: left;
 }
 
-.credits .img {
+.credits img {
     width: 5%;
-    position:inherit ;
-    display: inline;
 }
 
 /* .employeecard {

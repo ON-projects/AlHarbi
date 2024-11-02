@@ -77,8 +77,16 @@ if (scrollTop) {
         spaceBetween: 60
       },
       640: {
-        slidesPerView: 5,
+        slidesPerView: 3,
         spaceBetween: 80
+      }, 
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 5,
+        spaceBetween: 20
       }
     }
     });
