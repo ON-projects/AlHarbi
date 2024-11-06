@@ -52,7 +52,7 @@ if (scrollTop) {
 
 
   /**
-   * Slider
+   * Swiper
    */
   new Swiper('.clients-slider', {
     speed: 400,
@@ -120,27 +120,23 @@ if (scrollTop) {
       breakpoints: {
         320: {
           slidesPerView: 2,
-          spaceBetween: 10
-        },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 10
+          spaceBetween: 20
         },
         640: {
           slidesPerView: 5,
-          spaceBetween: 10
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 8,
+          spaceBetween: 20
         }
     },
       slidesPerView: 'auto',
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-      },
-      navigation: {
-        nextEl: ".custom-swiper-button-next",
-        prevEl: ".custom-swiper-button-prev",
-      }  
-});
+      } 
+    });
 
     var swiper = new Swiper(".report2023-slider", {
       centeredSlides: true,
@@ -156,12 +152,12 @@ if (scrollTop) {
           slidesPerView: 2,
           spaceBetween: 20
         },
-        480: {
-          slidesPerView: 3,
-          spaceBetween: 20
-        },
         640: {
           slidesPerView: 5,
+          spaceBetween: 20
+        },
+        992: {
+          slidesPerView: 8,
           spaceBetween: 20
         }
     },
@@ -170,12 +166,8 @@ if (scrollTop) {
         el: ".swiper-pagination",
         clickable: true,
         type: 'bullets',
-      },
-      navigation: {
-        nextEl: ".custom-swiper-button-next",
-        prevEl: ".custom-swiper-button-prev",
-      }  
-});
+      }
+    });
 
 var swiper = new Swiper(".report2024-slider", {
   centeredSlides: true,
@@ -191,27 +183,21 @@ var swiper = new Swiper(".report2024-slider", {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 20
-    },
     640: {
       slidesPerView: 5,
       spaceBetween: 20
+    },
+    992: {
+      slidesPerView: 8,
+      spaceBetween: 20
     }
-},
+  },
   slidesPerView: 'auto',
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-  },
-  navigation: {
-    nextEl: ".custom-swiper-button-next",
-    prevEl: ".custom-swiper-button-prev",
-  }  
-});
-
-
+  }
+  });
 
 /**
    * Testimnoials
@@ -231,16 +217,8 @@ var swiper = new Swiper(".report2024-slider", {
       }
       });
 
-
-/**
- * Newsbar
- */
-
-
   /**
    * Animation on scroll function and init
-   * 
-   * 
    */
   function aos_init() {
     AOS.init({
@@ -258,9 +236,11 @@ var swiper = new Swiper(".report2024-slider", {
   /**
    * Counter 
    */
-  
   new PureCounter();
 
+   /**
+   * Copyright 
+   */
 document.onload = document.getElementById("copyyear").innerHTML = newDate();
 
 });

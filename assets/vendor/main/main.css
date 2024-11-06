@@ -104,9 +104,9 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: rgba(var(--color-secondary-rgb), 0.2);
-  min-height: 40px;
-  margin-top: 5px;
+  background: linear-gradient(rgba(207, 207, 207, 0.4), rgba(255, 255, 255, 1));
+  min-height: 60px;
+  margin-top: 0;
 }
 
 .breadcrumbs h2 {
@@ -131,7 +131,7 @@ section {
 .breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
-  color: var(--color-secondary-light);
+  color: var(--color-primary);
   content: "/";
 }
 

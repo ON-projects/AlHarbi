@@ -1,38 +1,98 @@
-.hero h3{
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+.hero h3 {
     margin-bottom: 15px;
 }
-
-/* #newsbar {
+/*--------------------------------------------------------------
+# End of Carousel
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# Newsbar
+--------------------------------------------------------------*/
+.section1 {
+    white-space: nowrap;
+    overflow: hidden;
     height: 30px;
-    font-size: 20px;
-    font-weight: bold;
-    width: 50%;
+    width: 100%;
+    position: relative;
+    background-color: var(--color-primary);
+    box-shadow: 0px 0 10px rgba(55, 55, 63, 0.8);
+    margin-top: 20px;
+}
+
+.news {
+    display: inline-block;
+    margin-top: 0;
+    animation: marquee 20s linear infinite
+}
+
+.collection1 {
+    position:relative;
+    left: 0%;
+    animation: swap 20s linear infinite;
+}
+
+.item {
+    display: inline-block;
+    padding: 0 1rem;
+    font-size: 18px;
+    color: white;
+    font-weight:lighter;
+}
+
+@keyframes marquee {
+    0% {transform: translateX(0);
+    }
+    100% {transform: translateX(-100%);
+    }
+}
+
+@keyframes swap {
+    0%, 50% {left: 0%;
+    }
+    50.01%, 100% {left: 100%;
+    }
+}
+/*--------------------------------------------------------------
+# End of Newsbar
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Counter
+--------------------------------------------------------------*/
+.counts {
+    padding-top: 2px;
+    padding-bottom: 1px;
     background-color: white;
-    margin: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 10px;
-    box-shadow: 2px 4px 10px rgb(14, 13, 13), 2px 5px 15px rgb(77, 74, 74);
 }
 
-#newsbar:hover {
-transition: 0.5s;
-cursor: pointer;
+.counter {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(207, 207, 207, 0.4)), url(../assets/Images/Alharbicounter.png);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
 }
 
-#newsbar a {
-color:white;
-text-decoration: none;
-text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black, 0 0 4px black;
+.counts .counter span { 
+    font-weight: bold;
+    font-size: 45px;
+    color: var(--color-primary);
 }
 
-#newsbar a:hover {
+.counts .counter p {
+    color: var(--color-primary);
+    font-size: 20px;
+    font-style:oblique;
+    font-weight: bold;
+}
+/*--------------------------------------------------------------
+# End of Counter
+--------------------------------------------------------------*/
 
-transition: 0.5s;
-color: red;
-text-shadow: 0 0 1px black, 0 0 2px black, 0 0 3px black;
-} */
-
+/*--------------------------------------------------------------
+# Swiper
+--------------------------------------------------------------*/
 .clients{
 padding-bottom: 50px;
 }
@@ -48,12 +108,6 @@ height: 5px;
 background-color: grey;
 opacity: 1;
 }
-
-/* .maintitle {
-    font-size: 18px;
-    font-family: sans-serif ;
-    font-weight: normal;
-} */
 
 .features .clients-slider .swiper-wrapper .swiper-slide .nav-link {
     background-color: rgba(207, 207, 207, 0.2);
@@ -78,59 +132,6 @@ opacity: 1;
     color: var(--color-white);
 }
 
-.counts {
-    padding-top: 2px;
-    padding-bottom: 1px;
-    background-color: white;
-}
-
-.counter {
-    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(207, 207, 207, 0.4)), url(../assets/Images/Alharbicounter2.png);
-    background-size: cover;
-    background-position: center;
-    padding: 40px;
-}
-
-.counts .counter span { 
-    font-weight: bold;
-    font-size: 45px;
-    color: var(--color-primary);
-}
-
-.counts .counter p {
-    color: var(--color-primary);
-    font-size: 20px;
-    font-style:oblique;
-    font-weight: bold;
-}
-
-.cta {
-    background: linear-gradient(rgba(55, 57, 105, 0.7), rgba(207, 207, 207, 0.5)), url("../assets/Images/Alharbicta2.png") fixed center center;
-    background-size: cover;
-}
-
-.cta h2{
-    font-style: italic;
-}
-
-.cta h4{
-font-weight: bold;
-padding-top: 20px;
-padding-bottom: 20px;
-}
-
-.cta .btn{
-background-color: var(--color-white);
-font-size: 16px;
-border: 1px solid var(--color-primary);
-font-weight: bold;
-}
-
-.cta .btn:hover{
-background-color: var(--color-primary);
-color: var(--color-white);
-}
-
 .features .tab-content .tab-pane .featured-services .service-item .guidelines {
     color: var(--color-primary);
     text-align: center;
@@ -148,7 +149,6 @@ color: var(--color-white);
     margin: 5px; 
     margin-bottom: 10px;
 }   
-
 
 #featured-services .service-item .icon-box:hover{
     transition: ease-in-out 0.5s;
@@ -202,7 +202,6 @@ color: var(--color-white);
         padding: 40px 0;
     }
 
-
     .gallery .swiper-slide-active {
         border: 8px solid var(--color-primary);
         padding: 5px;
@@ -229,7 +228,7 @@ color: var(--color-white);
     width:100%;
     margin-left: 5px;
     margin-right: 5px;
-    }
+}
 
 .reports .year .yearReport {
     overflow: hidden;
@@ -282,51 +281,79 @@ color: var(--color-white);
     justify-content: start;
 }
 
-.section1 {
-    white-space: nowrap;
-    overflow: hidden;
-    height: 30px;
-    width: 100%;
-    position: relative;
+.testimonials .testimonial-item .btn {
     background-color: var(--color-primary);
-    box-shadow: 0px 0 10px rgba(55, 55, 63, 0.8);
-    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-white);
+    margin-top: 30px;
+
 }
 
-.news {
-    display: inline-block;
-    margin-top: 0;
-    animation: marquee 20s linear infinite
+.testimonials .testimonial-item h2 {
+margin-top: 20px;
 }
 
-.collection1 {
-    position:relative;
-    left: 0%;
-    animation: swap 20s linear infinite;
+.testimonials .testimonial-item h5 {
+    font-style: italic;
+    margin-top: 15px;
+    color: rgb(207, 207, 207);
 }
 
-.item {
-    display: inline-block;
-    padding: 0 1rem;
-    font-size: 18px;
-    color: white;
-    font-weight:lighter;
+.imagecard {
+    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
+    border-radius: 5px;
+    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
+    justify-content: center;
 }
 
-@keyframes marquee {
-0% {transform: translateX(0);
+.namecard {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
+    border-radius: 5px;
+    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
 }
-100% {transform: translateX(-100%);
-}
+/*--------------------------------------------------------------
+# End of Swiper
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# cta
+--------------------------------------------------------------*/
+.cta {
+    background: linear-gradient(rgba(55, 57, 105, 0.7), rgba(207, 207, 207, 0.5)), url("../assets/Images/Alharbicta2.png") fixed center center;
+    background-size: cover;
 }
 
-@keyframes swap {
-    0%, 50% {left: 0%;
-    }
-    50.01%, 100% {left: 100%;
-    }
-    }
+.cta h2{
+    font-style: italic;
+}
 
+.cta h4{
+font-weight: bold;
+padding-top: 20px;
+padding-bottom: 20px;
+}
+
+.cta .btn{
+background-color: var(--color-white);
+font-size: 16px;
+border: 1px solid var(--color-primary);
+font-weight: bold;
+}
+
+.cta .btn:hover{
+background-color: var(--color-primary);
+color: var(--color-white);
+}
+/*--------------------------------------------------------------
+# End of cta
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Scroll top
+--------------------------------------------------------------*/
 .scroll-top {
     position: fixed;
     visibility:hidden;
@@ -355,53 +382,104 @@ color: var(--color-white);
     visibility: visible;
     opacity: 1;
 }
+/*--------------------------------------------------------------
+# End of Scroll top
+--------------------------------------------------------------*/
 
-.testimonials .testimonial-item .btn {
-    background-color: var(--color-primary);
-    font-size: 15px;
-    font-weight: bold;
-    color: var(--color-white);
-    margin-top: 30px;
-
-}
-
-.testimonials .testimonial-item h2 {
-margin-top: 20px;
-}
-
-.testimonials .testimonial-item h5 {
-    font-style: italic;
-    margin-top: 15px;
-    color: rgb(207, 207, 207);
-}
-
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
 .credits {
     text-align: left;
 }
 
 .credits img {
-    width: 5%;
+    width: 25px;
+}
+/*--------------------------------------------------------------
+# End of Footer
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Projects
+--------------------------------------------------------------*/
+.pagetitle{
+    padding-top: 50px;
+    position: relative;
 }
 
-/* .employeecard {
-    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
-    border-radius: 5px;
-    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
-    display: grid;
-    list-style: none;
-} */
-
-.imagecard {
-    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
-    border-radius: 5px;
-    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
-    justify-content: center;
+.pagetitle span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 0;
+    z-index: 1;
+    position: absolute;
+    text-transform: uppercase;
+    color: rgb(207, 207, 207);
+    opacity: 0.4;
+    left:0;
+    right: 0;
 }
 
-.namecard {
-    padding: 10px;
-    text-align: left;
-    border: 1px solid rgba(var(--color-secondary-rgb),0.8);
-    border-radius: 5px;
-    background: linear-gradient(rgba(91, 123, 170, 0.3), rgba(255, 255, 255, 1));
+.pagetitle h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: 500;
+    z-index: 2;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    position: relative;
 }
+
+@media (max-width: 550px) {
+    .pagetitle h2 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .pagetitle span {
+        font-size: 38px;
+    }
+}
+
+.projectsicon {
+    font-size: 20px;
+    padding-top: 15px;
+}
+
+.projecttitle h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 100px;
+    margin-left: 60px;
+}
+
+.projecttitle h4 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+    color: var(--color-secondary);
+    margin-bottom: 20px;   
+    margin-left: 60px;
+}
+
+#phases {
+    font-weight: 550;
+    font-style: italic;
+    font-size: 30px;
+}
+
+#description button {
+    color: var(--color-secondary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+#description2 button {
+    color: var(--color-secondary);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+/*--------------------------------------------------------------
+# End of Projects
+--------------------------------------------------------------*/
